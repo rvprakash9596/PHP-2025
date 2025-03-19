@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button
+{
+  padding: 10px 20px;
+  font-size: 24px;
+  font-family:Times New Roman;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color:red}
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+
+<script language="javascript">
+col=new Array("red","green","blue","deeppink","orange","purple");
+i=0;
+function colorChange()
+{
+ document.fgColor=col[i];
+ i++;
+ if(i>5)
+ i=0;
+}
+ setInterval("colorChange()",1000);
+</script>
+</head>
+<body>
+<form>
+
+<marquee id=dd behavior="alternate" onMouseOver="stop()" onMouseOut="start()">
+<h1>Welcome To This Menu Item</h1></marquee></form>
+<center>
+<button class="button">Hello  &nbsp </button>&nbsp 
+<a href="services.html">
+<button class="button">Kaise Ho  &nbsp </button>&nbsp 
+</a>
+<button class="button">Mai Thik Hu&nbsp </button>&nbsp 
+<button class="button">Aur Tum &nbsp </button>&nbsp 
+<button class="button">Mai Bhi Thik Hu &nbsp  </button>&nbsp 
+<button class="button">Kaise Aaye Ho  &nbsp  </button>&nbsp 
+<button class="button">Cycle Se &nbsp  </button>&nbsp 
+</center>
+<br>
+<hr color="red">
+<!--  <img src="18.jpg" height="530" width="1520"> -->
+<form>
+</body>
+</html>
